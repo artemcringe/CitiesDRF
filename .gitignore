@@ -1,0 +1,29 @@
+# Django #
+*.log
+*.pot
+*.pyc
+__pycache__
+media
+
+
+# Virtual environment #
+venv
+.env
+
+# IDE #
+.idea
+.vscode
+
+# Compiled files #
+*.pyc
+*.pyo
+*.pyd
+
+# Dependency directories #
+/.venv
+/.venv3
+/.python-version
+
+# Other #
+*.swp
+.DS_Store
