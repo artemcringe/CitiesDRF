@@ -9,7 +9,7 @@ class City(models.Model):
         return f"{self.city_name}"
 
     class Meta:
-        verbose_name_plural = "Cities"
+        verbose_name_plural = "Города"
 
 
 class Street(models.Model):
@@ -18,6 +18,9 @@ class Street(models.Model):
 
     def __str__(self):
         return f"{self.street_name}"
+
+    class Meta:
+        verbose_name_plural = "Улицы"
 
 
 class Shop(models.Model):
@@ -30,5 +33,8 @@ class Shop(models.Model):
 
     def __str__(self):
         return f"{self.shop_name}"
+
+    class Meta:
+        verbose_name_plural = "Магазины"
 
 
