@@ -40,4 +40,3 @@ def seed_shops():
                                 open=time(randrange(6, 10), 0),
                                 close=time(randrange(16, 23), 0)
                                 )
-            print('есть')

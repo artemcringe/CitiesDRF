@@ -1,7 +1,6 @@
 from django.db import models
 
 
-# Create your models here.
 class City(models.Model):
     city_name = models.CharField(max_length=50, blank=None, null=None)
 
@@ -14,7 +13,7 @@ class City(models.Model):
 
 class Street(models.Model):
     street_name = models.CharField(max_length=100, null=True, blank=True)
-    city = models.ForeignKey(City, on_delete=models.CASCADE)
+    city = models.ForeignKey(City, on_delete=models.CASCADE, related_name='city')
 
     def __str__(self):
         return f"{self.street_name}"
@@ -36,5 +35,3 @@ class Shop(models.Model):
 
     class Meta:
         verbose_name_plural = "Магазины"
-
-
